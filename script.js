@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     searchButton.addEventListener('click', () => {
       const markerInput = document.getElementById('marker-input').value;
-      fetch('gene_data.json')
+      fetch('/gene_data.json')
        .then(response => response.json())
        .then(geneData => {
           console.log('Received gene data:', geneData);
