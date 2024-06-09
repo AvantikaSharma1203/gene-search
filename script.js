@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const outputDiv = document.getElementById('output');
   
     searchButton.addEventListener('click', () => {
-      const markerInput = document.getElementById('marker-input').value;
+      const markerInput = document.getElementById('gene-name').value;
       fetch('gene_data.json')
        .then(response => response.json())
        .then(geneData => {
