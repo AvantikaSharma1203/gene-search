@@ -9,6 +9,9 @@ app.use((req, res, next) => {
   next();
 });
 
+//Run static webpage directly
+app.use(express.static(__dirname));
+
 // Serve the JSON file
 app.get('/gene_data.json', (req, res) => {
   res.sendFile(__dirname + '/gene_data.json');
